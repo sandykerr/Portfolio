@@ -6,7 +6,13 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div
+      className="
+        flex flex-col min-h-screen
+        bg-[#121212] text-platinum
+        transition-colors duration-300
+      "
+    >
       <Navbar />
 
       <main className="flex-1">
@@ -14,7 +20,7 @@ function App() {
           <About />
         </section>
 
-        <section id="projects" className="py-16 bg-gray-800 dark:bg-gray-800">
+        <section id="projects" className="py-16">
           <Projects />
         </section>
 
@@ -27,7 +33,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
