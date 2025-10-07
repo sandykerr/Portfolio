@@ -16,11 +16,19 @@ function App() {
       <Navbar />
 
       <main className="flex-1">
-        <section id="about" className="py-16">
+        <section
+          id="about"
+          className="
+            w-full
+            px-6 md:px-12   /* horizontal space from App background */
+            py-6 md:py-12  /* vertical space from App background */
+            flex justify-center
+          "
+        >
           <About />
         </section>
 
-        <section id="projects" className="py-16">
+        <section id="projects">
           <Projects />
         </section>
 
